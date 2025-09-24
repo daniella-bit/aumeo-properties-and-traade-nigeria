@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aumeo Properties and Trade</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #000; /* Black background */
+      color: #ddd; /* Light silver text */
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #000, #222);
+      color: gold;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid silver;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: silver;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: gold;
+    }
+
+    /* Hero section with slider */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      height: 70vh;
+    }
+
+    .slides {
+      display: flex;
+      width: 900%;
+      animation: slide 36s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 70vh;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% {transform: translateX(0);}
+      10% {transform: translateX(0);}
+      20% {transform: translateX(-100%);}
+      30% {transform: translateX(-200%);}
+      40% {transform: translateX(-300%);}
+      50% {transform: translateX(-400%);}
+      60% {transform: translateX(-500%);}
+      70% {transform: translateX(-600%);}
+      80% {transform: translateX(-700%);}
+      90% {transform: translateX(-800%);}
+      100% {transform: translateX(0);}
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+
+    section h2 {
+      color: gold;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border: 2px solid silver;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+      border-color: gold;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: gold;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: silver;
+      color: black;
+    }
+
+    footer {
+      background: #111;
+      color: silver;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+      border-top: 2px solid gold;
+    }
+
+    footer a {
+      color: gold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aumeo Properties and Trade</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#offers">Offers</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="slideshow-container">
+
+  <div class="slide fade">
+    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=1200" alt="Modern Estate" style="width:100%">
+  </div>
+
+  <div class="slide fade">
+    <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=1200" alt="Luxury House" style="width:100%">
+  </div>
+
+  <div class="slide fade">
+    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=1200" alt="Beautiful Home" style="width:100%">
+  </div>
+
+</div>
+
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>Step Into Comfort and Endless Possibilities</h2>
+    <p>
+      A new level of refined living has been unlocked and it’s Lekki Avana Phase II!  
+      Every detail reflects exclusivity, elegance, and value. From refreshing sights to serene ambience,  
+      Lekki Avana Phase II is designed to give you the perfect balance of lifestyle and investment.
+    </p>
+  </section>
+
+  <!-- Offers Section -->
+  <section id="offers">
+    <h2>Our Offers</h2>
+    <p><strong>Title:</strong> Govt. Allocated CofO</p>
+    <p>You can secure your bungalow unit either at carcass or finished level.</p>
+    <ul style="list-style:none; text-align:left; display:inline-block;">
+      <li>✅ 3-Bedroom + pool — Finished: N76M | Carcass: N64M</li>
+      <li>✅ 3-Bedroom without pool — Finished: N68M | Carcass: N56M</li>
+      <li>✅ 4-Bedroom + pool — Finished: N81M | Carcass: N69M</li>
+      <li>✅ 4-Bedroom without pool — Finished: N73M | Carcass: N61M</li>
+    </ul>
+    <p>Secure your unit with an initial deposit of <strong>N5 MILLION</strong> and spread payment for up to 12 months.</p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Our Gallery</h2>
+    <div class="gallery">
+      <img src="images/pic1.jpg" alt="Estate photo 1">
+      <img src="images/pic2.jpg" alt="Estate photo 2">
+      <img src="images/pic3.jpg" alt="Estate photo 3">
+      <img src="images/pic4.jpg" alt="Estate photo 4">
+      <img src="images/pic5.jpg" alt="Estate photo 5">
+      <img src="images/pic6.jpg" alt="Estate photo 6">
+      <img src="images/pic7.jpg" alt="Estate photo 7">
+      <img src="images/pic8.jpg" alt="Estate photo 8">
+      <img src="images/pic9.jpg" alt="Estate photo 9">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> 08127621795</p>
+    <p><strong>Email:</strong> <a href="mailto:info@aumeopropertiesandtrade.com">info@aumeopropertiesandtrade.com</a></p>
+    <p><strong>Website:</strong> <a href="https://aumeopropertiesandtrade.com" target="_blank">aumeopropertiesandtrade.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aumeo Properties and Trade. All Rights Reserved.</p>
+  </footer>
+<style>
+  .slide {
+    display: none;
+    animation: fadeEffect 2s; /* Smooth fade */
+  }
+
+  @keyframes fadeEffect {
+    from {opacity: 0.4;} 
+    to {opacity: 1;}
+  }
+</style>
+
+<script>
+  let slideIndex = 0;
+
+  function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    
+    // hide all slides
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    
+    // move to next slide
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }    
+    
+    // show current slide
+    slides[slideIndex - 1].style.display = "block";  
+    
+    // change slide every 10 seconds
+    setTimeout(showSlides, 10000); 
+  }
+
+  // start slider
+  showSlides();
+</script>
+
+</body>
+</html>
